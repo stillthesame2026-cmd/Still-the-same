@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STILL THE SAME - Videojuego Narrativo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-particles" id="bgParticles"></div>
+
+  <div id="preloader">
+    <div class="spinner"></div>
+    <p>Cargando dinámica...</p>
+  </div>
+
+  <div class="custom-cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">STILL THE SAME</a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#temas">Temas</a>
+        <a href="#galeria">Galería</a>
+        <a href="#impacto">Impacto</a>
+        <a href="#creadores">Creadores</a>
+      </nav>
+
+      <div class="header-socials">
+        <a href="https://www.instagram.com/stillthesameofficial?igsh=bmxqcmtzZzdkbDJn" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1EU8Mhb4vn/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://youtube.com/@stillthesameofficial?si=HyaMEx_ckhix59ml" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="hero-bg" style="background-image: url('79899.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="particles" id="particles"></div>
+
+      <div class="hero-content fade-in-element">
+        <h1 class="hero-title">STILL<br>THE SAME</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-subtitle">
+          Un videojuego narrativo sobre una joven que enfrenta el machismo cotidiano.<br>
+          Su historia puede cambiar la tuya.
+        </p>
+        <span class="hero-badge">Para jóvenes de 16 a 20 años</span>
+
+        <div class="hero-buttons">
+          <a href="#galeria" class="btn btn-primary"><i class="fas fa-play"></i> VER TRÁILER</a>
+          <a href="#historia" class="btn btn-secondary">EXPLORAR <i class="fas fa-chevron-down"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia" class="section-padding reveal">
+      <div class="container grid-2-cols">
+        <div class="story-image-wrapper">
+          <img src="Img/logo.png" alt="logo" class="story-img">
+        </div>
+        <div class="story-content">
+          <h2 class="section-title">La Historia</h2>
+          <p class="story-text">
+            En <strong>STILL THE SAME</strong>, te pones en la piel de una joven universitaria que navega por situaciones cotidianas cargadas de violencia simbólica, micromachismos y presiones sociales.
+          </p>
+          <p class="story-text">
+            A través de un sistema de elecciones narrativas profundas, cada decisión moldeará sus relaciones, sus metas y la forma en que el mundo responde ante sus límites. ¿Serás capaz de romper el ciclo?
+          </p>
+          <button id="openCharactersBtn" class="btn btn-primary">Más <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="temas" class="section-padding bg-darker reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Temas Abordados</h2>
+          <p class="section-description">Exploramos las múltiples facetas de las dinámicas de poder contemporáneas.</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-mars-stroke"></i></div>
+            <h3>Machismo</h3>
+            <p>Análisis de los roles de género normativos y las expectativas sociales impuestas desde la juventud.</p>
+          </div>
+
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <h3>Violencia Psicológica</h3>
+            <p>Visibilización de la manipulación emocional, gaslighting y el control sutil en entornos afectivos.</p>
+          </div>
+
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-wallet"></i></div>
+            <h3>Violencia Económica</h3>
+            <p>Cómo la dependencia financiera y las barreras invisibles condicionan la autonomía personal.</p>
+          </div>
+
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Desigualdad Laboral</h3>
+            <p>Brechas salariales, descalificación profesional y estereotipos en el mundo académico y laboral.</p>
+          </div>
+
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Educación</h3>
+            <p>El rol de las aulas y los espacios formativos en la deconstrucción y el pensamiento crítico.</p>
+          </div>
+
+          <div class="glass-card">
+            <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <h3>Empoderamiento Femenino</h3>
+            <p>Fomento de la sororidad, el liderazgo reflexivo y la autocompasión como herramientas de cambio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section-padding reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Galería</h2>
+          <p class="section-description">Echa un vistazo al estilo visual cinematográfico y a la atmósfera del videojuego.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="Img/backgrond_begin.jpeg" alt="Fondo" class="lightbox-trigger">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Img/graduation.png" alt="graduation" class="lightbox-trigger">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+          <div class="gallery-item">
+            <img src="Img/First.png" alt="Fondo" class="lightbox-trigger">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impacto" class="section-padding bg-darker reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Nuestro Impacto</h2>
+          <p class="section-description">El alcance educativo y social de la propuesta narrativa.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3 class="stat-number" data-target="29" data-start="15">15 - 0</h3>
+            <p class="stat-label">Jóvenes Afectados</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-target="6">0</h3>
+            <p class="stat-label">Problemáticas Abordadas</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-target="2">0</h3>
+            <p class="stat-label">Finales Diferentes</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-target="100%">0%</h3>
+            <p class="stat-label">Basado en Situaciones Reales</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="creadores" class="section-padding reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Creadores</h2>
+          <p class="section-description">Las mentes creativas detrás del desarrollo de STILL THE SAME.</p>
+        </div>
+
+        <div class="creators-grid">
+          <div class="creator-card">
+            <div class="creator-photo">
+              <img src="Img/107984 (1).jpg" alt="Karen Rodríguez">
+            </div>
+            <h3>Karen Rodríguez</h3>
+            <span class="creator-role">Programadora Web</span>
+            <div class="creator-socials">
+              <a href="https://www.instagram.com/yuliethjk_?igsh=MWJnNnFobjk5ODFveg==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/1Nmw3vuCmp/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/Yulieth15118811" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="creator-card">
+            <div class="creator-photo">
+              <img src="Img/107983 (1).jpg" alt="Sara Cárdenas">
+            </div>
+            <h3>Sara Cárdenas</h3>
+            <span class="creator-role">Diseñadora Web</span>
+            <div class="creator-socials">
+              <a href="https://www.instagram.com/cardenassara_15?igsh=MTd5c2NwM253b3F0Yw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/1CJzEr8Ewf/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+
+          <div class="creator-card">
+            <div class="creator-photo">
+              <img src="Img/107972.jpg" alt="Keni Hernández">
+            </div>
+            <h3>Keni Hernández</h3>
+            <span class="creator-role">Programador</span>
+            <div class="creator-socials">
+              <a href="https://www.instagram.com/kenisit0?igsh=MTNleTNhenZud2Z0YQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/1JeZmh5M2c/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/KeniCintur98784" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="creator-card">
+            <div class="creator-photo">
+              <img src="Img/107969.jpg" alt="Danna Sáenz">
+            </div>
+            <h3>Danna Sáenz</h3>
+            <span class="creator-role">Diseñadora</span>
+            <div class="creator-socials">
+              <a href="https://www.instagram.com/dnnsaenz?igsh=Z3BncXQ4bTJnYjZl" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://x.com/dannaaask" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="custom-footer">
+    <div class="footer-container">
+      
+      <div class="footer-col footer-brand">
+        <h2 class="footer-logo">STILL<br><span>THE SAME</span></h2>
+      </div>
+
+      <div class="footer-col footer-message">
+        <div class="heart-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </div>
+        <p class="footer-text">
+          Un juego de decisiones que te invita a <strong>cuestionar, elegir y cambiar</strong> la historia.
+        </p>
+      </div>
+
+      <div class="footer-col footer-socials">
+        <h3 class="socials-title">Síguenos</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/stillthesameofficial?igsh=bmxqcmtzZzdkbDJn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1EU8Mhb4vn/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://youtube.com/@stillthesameofficial?si=HyaMEx_ckhix59ml" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+        <a href="mailto:stillthesame2026@gmail.com" class="footer-email">
+          <i class="fas fa-envelope"></i> stillthesame2026@gmail.com
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="decorative-x">✕</div>
+      <p>&copy; 2026 STILL THE SAME. Todos los derechos reservados.</p>
+      <div class="decorative-x">✕</div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightboxImg" alt="Imagen ampliada">
+  </div>
+
+  <div id="charactersModal" class="characters-modal">
+    <div class="characters-modal-content">
+      <span class="characters-modal-close" id="closeCharactersBtn">&times;</span>
+      <div class="modal-header">
+        <span class="section-tag">Universo del juego</span>
+        <h2 class="section-title">Personajes</h2>
+      </div>
+      
+      <div class="characters-list">
+        <div class="character-card">
+          <div class="character-img-container">
+            <img src="Img/Hellen.jpg" alt="Hellen" class="character-img">
+          </div>
+          <div class="character-info">
+            <h3>Hellen</h3>
+            <span class="character-role">Protagonista</span>
+            <p>Hellen es una joven de 16 años, estudiante de grado 11, inteligente, trabajadora y con grandes sueños. Vive en un entorno rural marcado por el machismo y las desigualdades, pero lucha por construir un futuro diferente. Aunque suele mostrarse fuerte, también enfrenta miedo, presión y dudas que ponen a prueba su decisión de salir adelante.</p>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="character-img-container">
+            <img src="Img/Mateo.jpg" alt="Mateo" class="character-img">
+          </div>
+          <div class="character-info">
+            <h3>Mateo</h3>
+            <span class="character-role">Novio de Hellen</span>
+            <p>Mateo es el novio de Hellen, un joven cariñoso pero posesivo y controlador. Sus celos y actitudes machistas afectan poco a poco la relación y la libertad de Hellen.</p>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="character-img-container">
+            <img src="Img/IMG-20260921-WA0147.jpg" alt="Valeria" class="character-img">
+          </div>
+          <div class="character-info">
+            <h3>Valeria</h3>
+            <span class="character-role">Mejor amiga</span>
+            <p>El pilar fundamental de Hellen. Brinda apoyo emocional y demuestra la importancia de la sororidad en momentos difíciles.</p>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="character-img-container">
+            <img src="Img/Ramirez.png" alt="Profesor Ramírez" class="character-img">
+          </div>
+          <div class="character-info">
+            <h3>Profesor Ramírez</h3>
+            <span class="character-role">Mentor académico</span>
+            <p>Representa la autoridad institucional y los prejuicios sutiles dentro del ámbito educativo tradicional.</p>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="character-img-container">
+            <img src="Img/Jose.png" alt="José" class="character-img">
+          </div>
+          <div class="character-info">
+            <h3>José</h3>
+            <span class="character-role">Padre de Hellen</span>
+            <p>El papá de Hellen es un hombre autoritario y machista, convencido de que una mujer debe dedicarse al hogar. Por sus creencias, limita las decisiones y los sueños de su hija.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
